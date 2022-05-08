@@ -74,7 +74,7 @@ body::after {
   padding: 20px;
 }
 
-#about-card .img {
+#about-card > .img {
   background-image: url("https://images.unsplash.com/photo-1649735624632-c4d5f6805778?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80");
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,39 +89,85 @@ body::after {
   gap: 20px;
 }
 
-.card-item {
-  color: #fff;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  text-align: center;
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
   position: relative;
-  transition: transform 0.2s;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
-.flip-card-front .born {
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+  background-size: cover;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.born {
   background-image: url("https://images.unsplash.com/photo-1591161555818-7b9debeccc07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
 }
 
-.flip-card-front .adress {
+.adress {
   background-image: url("https://images.unsplash.com/photo-1531140055686-3b8629542e18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
 }
 
-.flip-card-front {
+.body-status {
   background-image: url("https://images.unsplash.com/photo-1501869150797-9bbb64f782fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
 }
 
-.flip-card-front {
+.education {
   background-image: url("https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80");
 }
 
-.flip-card-front {
+.budget {
   background-image: url("https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
 }
 
-.flip-card-front {
+.relationship {
   background-image: url("https://images.unsplash.com/photo-1494774157365-9e04c6720e47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+
+.me {
+  background-image: url("https://images.unsplash.com/photo-1649735624632-c4d5f6805778?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80");
+}
+
+.my-photo-front {
+  width: auto;
+  height: auto;
+}
+
+.my-photo-back {
+  background-image: url("https://scontent.fhan3-4.fna.fbcdn.net/v/t1.6435-9/56997576_1051316248393348_7227817737349758976_n.jpg?_nc_cat=106&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=7GrX-MvfskIAX_YiHXR&_nc_ht=scontent.fhan3-4.fna&oh=00_AT_o231tNGT-CrHl_hKN75SnHiKV4zYxdDtSmCR3icUNDA&oe=629C8187");
+  background-size: cover;
 }
