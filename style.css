@@ -6,12 +6,13 @@
 }
 
 body {
-  width: 100vw;
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  color: #095f6c;
 }
 
-body::after {
+/* body::after {
   content: "";
   position: fixed;
   top: 0;
@@ -23,7 +24,7 @@ body::after {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
-}
+} */
 
 .container {
   width: 1200px;
@@ -35,42 +36,79 @@ body::after {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+  line-height: 60px;
 }
 
 .logo a {
   cursor: pointer;
-  color: #fff;
+  color: #095f6c;
   text-decoration: none;
+  transition: 0.5s all ease;
+  text-align: center;
+  display: inline-block;
+  /* width: 100px; */
 }
 
-.logo a:hover {
-  color: aquamarine;
+.logo a::after:hover {
+  content: "";
+  color: #ffffff;
+  background: #23db92;
+  border-radius: 10px;
+  height: auto;
 }
 
 .nav .menu {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 20px;
+  gap: 10px;
   list-style: none;
   justify-items: center;
 }
 
-.nav .menu li a {
-  text-decoration: none;
-  color: #fff;
-  display: inline-block;
-  padding: 10px;
-  transition: 0.3s all ease;
+.nav .menu li {
+  position: relative;
 }
 
-.nav .menu li a:hover {
-  color: aquamarine;
+.nav .menu li a {
+  text-decoration: none;
+  /* padding: 30px 0; */
+  transition: 0.3s all ease;
+  /* width: fit-content; */
+  color: #095f6c;
+  font-size: 18px;
+  letter-spacing: -1px;
+  display: inline-block;
+  /* width: 100px; */
+  text-align: center;
+  position: relative;
+}
+
+.nav .menu li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 0px;
+  transition: 600ms;
+}
+
+.nav .menu li a:hover::before {
+  width: 100%;
+  background: #23db92;
+}
+/* ................. */
+/* ABOUT ME SECTION  */
+/* ..................*/
+
+h2 {
+  color: #095f6c;
 }
 
 #about-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 60px;
   padding: 20px;
 }
 
@@ -78,7 +116,11 @@ body::after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 200px 200px 200px;
-  gap: 20px;
+  gap: 40px;
+}
+
+.card-info .flip-card-back {
+  align-items: center;
 }
 
 .flip-card {
@@ -88,6 +130,9 @@ body::after {
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   border-radius: 10px;
+  box-shadow: rgba(47, 175, 197, 0.4) 5px 5px, rgba(36, 131, 160, 0.3) 10px 10px,
+    rgba(27, 192, 192, 0.2) 15px 15px, rgba(11, 194, 226, 0.1) 20px 20px,
+    rgba(9, 223, 212, 0.05) 25px 25px;
 }
 
 /* This container is needed to position the front and back side */
@@ -124,38 +169,47 @@ body::after {
   border-radius: 10px;
 }
 
-/* Style the back side */
-.flip-card-back {
-  /* background-color: dodgerblue; */
-  color: white;
+.my-photo-back {
+  color: #095f6c;
   transform: rotateY(180deg);
 }
+
+/* Style the back side */
+.card-info .flip-card-back {
+  /* background-color: dodgerblue; */
+  color: #095f6c;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .born {
-  background-image: url("https://images.unsplash.com/photo-1591161555818-7b9debeccc07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-image: url("https://images.unsplash.com/flagged/photo-1551049215-23fd6d2ac3f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80");
 }
 
 .adress {
-  background-image: url("https://images.unsplash.com/photo-1531140055686-3b8629542e18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+  background-image: url("https://images.unsplash.com/photo-1585811545468-2c2d995fd13e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
 }
 
 .body-status {
-  background-image: url("https://images.unsplash.com/photo-1501869150797-9bbb64f782fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  background-image: url("https://images.unsplash.com/photo-1537094082840-dcbbfa99385f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
 }
 
 .education {
-  background-image: url("https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80");
+  background-image: url("https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
 }
 
 .budget {
-  background-image: url("https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-image: url("https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
 }
 
 .relationship {
-  background-image: url("https://images.unsplash.com/photo-1494774157365-9e04c6720e47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-image: url("https://images.unsplash.com/photo-1513279922550-250c2129b13a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
 }
 
 .me {
-  background-image: url("https://images.unsplash.com/photo-1649735624632-c4d5f6805778?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80");
+  background-image: url("https://images.unsplash.com/photo-1535295972055-1c762f4483e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -173,4 +227,25 @@ body::after {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+}
+/* ................... */
+/* CONTACT ME SECTION  */
+/* ................... */
+form {
+  padding: 20px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 60px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+input {
+  padding: 10px;
+  color: #095f6c;
 }
