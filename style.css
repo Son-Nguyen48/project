@@ -7,7 +7,7 @@
 
 body {
   font-size: 20px;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   color: #095f6c;
 }
@@ -101,6 +101,10 @@ body {
 /* ABOUT ME SECTION  */
 /* ..................*/
 
+#about-me {
+  margin-bottom: 50px;
+}
+
 h2 {
   color: #095f6c;
 }
@@ -128,7 +132,7 @@ h2 {
   width: 300px;
   height: 200px;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
   border-radius: 10px;
   box-shadow: rgba(47, 175, 197, 0.4) 5px 5px, rgba(36, 131, 160, 0.3) 10px 10px,
     rgba(27, 192, 192, 0.2) 15px 15px, rgba(11, 194, 226, 0.1) 20px 20px,
@@ -231,21 +235,163 @@ h2 {
 /* ................... */
 /* CONTACT ME SECTION  */
 /* ................... */
-form {
-  padding: 20px 100px;
+#contact-me {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 60px;
+}
+
+.contact-me {
+  grid-column: 1 / span 2;
+}
+
+.contact-infor {
+  padding: 20px;
+  border: #095f6c 2px solid;
+  border-radius: 20px;
+  margin: 30px auto 0 auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(9, 95, 108);
+  color: #ffffff;
+}
+
+form {
+  padding: 20px 100px;
 }
 
 .form-label {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 10px;
+  align-self: end;
+  margin-bottom: 10px;
 }
 
 input {
-  padding: 10px;
+  padding: 5px;
   color: #095f6c;
+  border-radius: 5px;
+  border: 2px solid #095f6c;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #095f6c;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #095f6c;
+}
+
+::placeholder {
+  color: #095f6c;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  border: #095f6c 2px solid;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  color: #095f6c;
+}
+
+.send-button {
+  text-align: center;
+}
+
+button {
+  width: 50%;
+  border: 2px solid #095f6c;
+  padding: 5px;
+  background-color: #095f6c;
+  border-radius: 5px;
+  color: #ffffff;
+  transition: 600ms;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #095f6c;
+}
+/*----------------*/
+/* IDEAL OF LIFE  */
+/*----------------*/
+
+.carousel {
+  background-color: #095f6c;
+  width: 1000px;
+  margin: 50px auto;
+  border-radius: 8px;
+  color: #fff;
+  padding: 32px;
+  padding-left: 86px;
+  display: flex;
+  align-items: center;
+  gap: 86px;
+  position: relative;
+}
+
+img {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.main-quote {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #e3fafc;
+}
+
+.author {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #66d9e8;
+}
+
+.job {
+  font-size: 12px;
+  color: #66d9e8;
+}
+
+.btn {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #095f6c;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
 }

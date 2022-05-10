@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* .carousel {
+  width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  background: #087352;
+  border-radius: 5px;
+  align-items: center;
+  padding: 32px;
+  gap: 86px;
+  position: relative;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  transform: scale(0.8);
+}
+
+blockquote p {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #e6fcf5;
+}
+
+.btn {
+  background: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 30px -5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-left {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.btn-right {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+button svg {
+  stroke: #087352;
+} */
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+}
+
+.carousel {
+  background-color: #087352;
+  width: 800px;
+  margin: 100px auto;
+  border-radius: 8px;
+  color: #fff;
+  padding: 32px;
+  padding-left: 86px;
+  display: flex;
+  align-items: center;
+  gap: 86px;
+  position: relative;
+}
+
+img {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.main-quote {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #e6fcf5;
+}
+
+.author {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #c3fae8;
+}
+
+.job {
+  font-size: 12px;
+  color: #c3fae8;
+}
+
+.btn {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #095f6c;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}

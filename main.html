@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
     <!-- FONT AWESOME -->
     <script
       src="https://kit.fontawesome.com/ccbcf262d8.js"
@@ -104,9 +105,59 @@
           </div>
         </div>
       </div>
+
+      <!-- ................ -->
+      <!-- MY LIFE SECTION  -->
+      <!-- ................ -->
+
       <div id="ideal-of-life">
-        <h2 class="famous-talk"></h2>
-        <p class="author"></p>
+        <h2 class="ideal-of-life">My life</h2>
+        <div class="carousel">
+          <img
+            src="https://images.unsplash.com/photo-1583294265510-b0428e1aebd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+            alt="Wake up! Kick ass! Be kind! Repeat!"
+          />
+          <blockquote class="quote">
+            <p class="main-quote">
+              "I have a simple philosophy: Fill what's empty Empty what's full.
+              Scratch where it itches."
+            </p>
+            <p class="author">-Alice Roosevelt Longworth-</p>
+            <p class="job">-Frontend Developer-</p>
+          </blockquote>
+          <button class="btn btn-left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <button class="btn btn-right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
       <div id="my-life"></div>
       <div id="my-will"></div>
@@ -119,6 +170,14 @@
 
       <div id="contact-me">
         <h2 class="contact-me">Contact me</h2>
+        <div class="contact-infor">
+          <p class="contact-infor--adress">
+            Adress: Ngõ 59 Mễ Trì Nam Từ Liêm Hà Nội
+          </p>
+          <p class="contact-infor--email">Email: theson4895@gmail.com</p>
+          <p class="contact-infor--phone">Phone: 0387758077</p>
+          <p class="contact-infor--website">Website: Son-nguyen48.github.io</p>
+        </div>
         <form action="">
           <label class="form-label" for="email"
             >Your Email:
@@ -153,19 +212,23 @@
               placeholder="Please enter your title message"
             />
           </label>
-          <label for="message"
+          <label for="message" class="message"
             >Your message:
 
             <textarea
               name="message"
               id="message"
-              cols="30"
+              cols="40"
               rows="10"
               placeholder="Please enter your title message"
             ></textarea>
           </label>
+          <div class="send-button">
+            <button>Send</button>
+          </div>
         </form>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
