@@ -236,29 +236,38 @@ h2 {
 /* CONTACT ME SECTION  */
 /* ................... */
 #contact-me {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
 }
 
-.contact-me {
+/* .contact-me {
   grid-column: 1 / span 2;
-}
+} */
 
 .contact-infor {
-  padding: 20px;
-  border: #095f6c 2px solid;
+  /* padding: 20px; */
+  /* border: #095f6c 2px solid; */
   border-radius: 20px;
-  margin: 30px auto 0 auto;
-  width: 400px;
+  width: 1000px;
+  margin: 30px auto 30px auto;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: rgb(9, 95, 108);
-  color: #ffffff;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  /* background-color: rgb(9, 95, 108); */
+  /* color: #ffffff; */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  column-gap: 40px;
 }
 
-form {
-  padding: 20px 100px;
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgb(9, 95, 108);
+  color: #ffffff;
+  background-clip: border-box;
+  border-radius: 20px;
 }
 
 .form-label {
@@ -339,6 +348,7 @@ button:hover {
   align-items: center;
   gap: 86px;
   position: relative;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
 }
 
 img {
