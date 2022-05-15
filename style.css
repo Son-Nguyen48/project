@@ -391,6 +391,7 @@ img {
   background: #fff;
   color: #095f6c;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
 }
 
 .btn:hover {

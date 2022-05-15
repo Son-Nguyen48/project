@@ -69,16 +69,33 @@ body {
   font-family: "Inter", sans-serif;
   color: #343a40;
   line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .carousel {
+  height: 534px;
+  width: 1000px;
+  overflow: hidden;
+}
+
+/* .carousel-container {
+  display: flex;
+  transform: translate(0);
+  transition: transform 0.5s ease-in-out;
+} */
+
+.carousel-item {
   background-color: #087352;
   width: 800px;
-  margin: 100px auto;
+  margin: 100px auto 200px auto;
   border-radius: 8px;
   color: #fff;
   padding: 32px;
   padding-left: 86px;
+  padding-right: 48px;
   display: flex;
   align-items: center;
   gap: 86px;
@@ -140,4 +157,26 @@ img {
   right: 0;
   top: 50%;
   transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 32px);
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: #087352 2px solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot--fill {
+  background-color: #087352;
 }
