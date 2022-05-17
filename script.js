@@ -1,8 +1,16 @@
-const doTest = () => {
-  var varGlobal = "9999";
-  return varGlobal;
-};
-
-varGlobal = "99999";
-const varStr = varGlobal.toString();
-console.log(varGlobal);
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    }
+  }
+});
