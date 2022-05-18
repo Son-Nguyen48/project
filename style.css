@@ -107,7 +107,10 @@ body {
 
 h2 {
   color: #095f6c;
-  margin-bottom: 40px;
+}
+
+.about-me-title {
+  margin-bottom: 50px;
 }
 
 #about-card {
@@ -308,6 +311,10 @@ img {
   transform: translate(50%, -50%);
 } */
 
+.qoute--title {
+  margin-bottom: 0;
+}
+
 img {
   height: 200px;
   border-radius: 8px;
@@ -469,12 +476,26 @@ img {
 /* ................... */
 
 .my-life--title {
-  margin-bottom: 40px;
+  margin-bottom: 52px;
+}
+
+.my-life--short {
+  display: flex;
+  padding-left: 76px;
+  margin-bottom: 80px;
+  justify-content: space-between;
+}
+
+.my-life--short img {
+  transform: scale(1.3);
 }
 
 .my-life--short-look {
   max-width: 800px;
   margin-bottom: 40px;
+  padding-left: 48px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .my-life--free-time {
@@ -495,6 +516,12 @@ img {
 
 .my-life--in-free-time {
   max-width: 750px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#my-life {
+  margin-bottom: 82px;
 }
 /* ................... */
 /* CONTACT ME SECTION  */
@@ -522,6 +549,7 @@ img {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   column-gap: 40px;
+  margin-bottom: 40px;
 }
 
 .contact-detail {
@@ -605,4 +633,131 @@ button {
 button:hover {
   background-color: #fff;
   color: #095f6c;
+}
+
+.contact-icon {
+  width: 400px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.contact-icon--item a span {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.contact-icon--item a span svg {
+  color: #333;
+}
+
+.facebook a span:hover {
+  background: #3b5999;
+}
+
+.twitter a span:hover {
+  background: #46c1f6;
+}
+
+.instagram a span:hover {
+  background: #e1306c;
+}
+
+.github a span:hover {
+  background: #333333;
+}
+
+.linkedin a span:hover {
+  background: #3755ff;
+}
+
+.contact-icon--item a span:hover svg {
+  color: #fff;
+}
+
+.contact-icon .contact-icon--hover {
+  font-size: 14px;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.contact-icon--hover::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  transform: translate(-50%, 20%) rotate(45deg);
+  bottom: 0;
+  left: 50%;
+}
+
+.facebook span:hover .contact-icon--hover {
+  background: #3b5999;
+  opacity: 1;
+  transform: translate(-25%, -120%);
+}
+
+.twitter span:hover .contact-icon--hover {
+  background: #46c1f6;
+  opacity: 1;
+  transform: translate(-12%, -120%);
+}
+
+.instagram span:hover .contact-icon--hover {
+  background: #e1306c;
+  opacity: 1;
+  transform: translate(-22%, -120%);
+}
+
+.github span:hover .contact-icon--hover {
+  background: #333333;
+  opacity: 1;
+  transform: translate(-14%, -120%);
+}
+
+.linkedin span:hover .contact-icon--hover {
+  background: #3755ff;
+  opacity: 1;
+  transform: translate(-18%, -120%);
+}
+
+.facebook .contact-icon--hover::before {
+  background: #3b5999;
+  transform: translate(-50%, 20%) rotate(45deg);
+}
+.twitter .contact-icon--hover::before {
+  background: #46c1f6;
+  transform: translate(-50%, 20%) rotate(45deg);
+}
+.instagram .contact-icon--hover::before {
+  background: #e1306c;
+  transform: translate(-50%, 20%) rotate(45deg);
+}
+.github .contact-icon--hover::before {
+  background: #333333;
+  transform: translate(-50%, 20%) rotate(45deg);
+}
+.linkedin .contact-icon--hover::before {
+  background: #3755ff;
+  transform: translate(-50%, 20%) rotate(45deg);
+}
+
+.contact-icon--hover {
+  opacity: 0;
+  transition: 0.5s all ease-in;
 }
