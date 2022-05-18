@@ -39,12 +39,12 @@ body {
   line-height: 60px;
   width: 1200px;
   transition: 0.4s all ease;
+  z-index: 999;
 }
 
 .fixed {
   position: fixed;
   top: 0;
-  z-index: 1;
   background: #095f6c;
   width: 1200px;
 }
