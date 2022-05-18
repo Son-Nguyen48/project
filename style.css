@@ -37,6 +37,25 @@ body {
   align-items: center;
   margin-bottom: 50px;
   line-height: 60px;
+  width: 1200px;
+  transition: 0.4s all ease;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background: #095f6c;
+  width: 1200px;
+}
+
+.fixed a.home-page,
+.fixed .nav .menu li a {
+  color: #fff;
+}
+
+.fixed a.home-page {
+  margin-left: 20px;
 }
 
 .logo a {
@@ -59,7 +78,7 @@ body {
 
 .nav .menu {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   list-style: none;
   justify-items: center;
@@ -197,7 +216,7 @@ h2 {
 }
 
 .adress {
-  background-image: url("https://images.unsplash.com/photo-1585811545468-2c2d995fd13e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f5/Phong_c%E1%BA%A3nh_H%E1%BB%93_T%C3%A2y.jpg");
 }
 
 .body-status {
@@ -230,7 +249,7 @@ h2 {
 }
 
 .my-photo-back {
-  background-image: url("https://scontent.fhan3-4.fna.fbcdn.net/v/t1.6435-9/56997576_1051316248393348_7227817737349758976_n.jpg?_nc_cat=106&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=7GrX-MvfskIAX_YiHXR&_nc_ht=scontent.fhan3-4.fna&oh=00_AT_o231tNGT-CrHl_hKN75SnHiKV4zYxdDtSmCR3icUNDA&oe=629C8187");
+  background-image: url("https://scontent-hkt1-1.xx.fbcdn.net/v/t39.30808-6/280193376_532029461762486_2409812261949373109_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=2Tmk1OP1CjgAX-VA-V9&_nc_ht=scontent-hkt1-1.xx&oh=00_AT_b6UTDUYmOVQVbryzcsB5UOWRnxNFDjnW9yE6y4a0X2A&oe=628AA544");
   background-size: cover;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -658,11 +677,11 @@ button:hover {
 }
 
 .contact-icon--item a span svg {
-  color: #333;
+  color: #333; /*Make icon color #333*/
 }
 
 .facebook a span:hover {
-  background: #3b5999;
+  background: #3b5999; /*Make span color #3b5999 when hover*/
 }
 
 .twitter a span:hover {
@@ -682,10 +701,11 @@ button:hover {
 }
 
 .contact-icon--item a span:hover svg {
-  color: #fff;
+  color: #fff; /*Make icon when hover #fff*/
 }
 
 .contact-icon .contact-icon--hover {
+  /*style box appear when hover span*/
   font-size: 14px;
   padding: 8px;
   position: absolute;
@@ -696,6 +716,7 @@ button:hover {
 }
 
 .contact-icon--hover::before {
+  /*Style box appear when hover span*/
   position: absolute;
   content: "";
   display: inline-block;
@@ -707,6 +728,7 @@ button:hover {
 }
 
 .facebook span:hover .contact-icon--hover {
+  /*Style color, and position box appear when hover span*/
   background: #3b5999;
   opacity: 1;
   transform: translate(-25%, -120%);
@@ -740,18 +762,22 @@ button:hover {
   background: #3b5999;
   transform: translate(-50%, 20%) rotate(45deg);
 }
+
 .twitter .contact-icon--hover::before {
   background: #46c1f6;
   transform: translate(-50%, 20%) rotate(45deg);
 }
+
 .instagram .contact-icon--hover::before {
   background: #e1306c;
   transform: translate(-50%, 20%) rotate(45deg);
 }
+
 .github .contact-icon--hover::before {
   background: #333333;
   transform: translate(-50%, 20%) rotate(45deg);
 }
+
 .linkedin .contact-icon--hover::before {
   background: #3755ff;
   transform: translate(-50%, 20%) rotate(45deg);
@@ -759,5 +785,15 @@ button:hover {
 
 .contact-icon--hover {
   opacity: 0;
-  transition: 0.5s all ease-in;
+  transition: 0.5s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: 18px;
+  width: 400px;
+  margin: 0 auto;
 }
