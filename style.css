@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 20px;
   font-family: "Inter", sans-serif;
@@ -45,8 +49,9 @@ body {
 .fixed {
   position: fixed;
   top: 0;
+  left: 0;
   background: #095f6c;
-  width: 1200px;
+  width: 100%;
 }
 
 .fixed a.home-page,
@@ -519,10 +524,11 @@ img {
 
 .my-life--free-time {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 20px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  gap: 86px;
 }
 
 .my-life--free-time--content {
