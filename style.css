@@ -37,7 +37,7 @@ body {
 } */
 
 .max-width {
-  max-width: 1350px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -293,76 +293,9 @@ h2 {
 /* IDEAL OF LIFE  */
 /*----------------*/
 
-/* .carousel-item {
-  background-color: #095f6c;
-  width: 1000px;
-  margin: 50px auto;
-  border-radius: 8px;
-  color: #fff;
-  padding: 32px;
-  padding-left: 86px;
-  display: flex;
-  align-items: center;
-  gap: 86px;
-  position: relative;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+#quotes .max-width {
+  max-width: 1350px;
 }
-
-img {
-  height: 200px;
-  border-radius: 8px;
-  transform: scale(1.5);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
-}
-
-.main-quote {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
-  margin-bottom: 32px;
-  color: #e3fafc;
-}
-
-.author {
-  font-size: 14px;
-  margin-bottom: 4px;
-  color: #66d9e8;
-}
-
-.job {
-  font-size: 12px;
-  color: #66d9e8;
-}
-
-.btn {
-  width: 42px;
-  height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  color: #095f6c;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-}
-
-.btn:hover {
-  cursor: pointer;
-}
-
-.btn-left {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.btn-right {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate(50%, -50%);
-} */
 
 .quote--title {
   margin-bottom: 50px;
@@ -476,15 +409,15 @@ img {
 
 .owl-prev {
   position: absolute;
-  left: 4%;
-  transform: translateX(-44%);
+  left: 6%;
+  transform: translateX(-52%);
   /* z-index: -1; */
 }
 
 .owl-next {
   position: absolute;
-  right: 4%;
-  transform: translateX(46%);
+  right: 6%;
+  transform: translateX(52%);
   /* z-index: -1; */
 }
 
@@ -551,15 +484,16 @@ img {
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: -0.5px;
+  padding-top: 16px;
 }
 
 .my-life--free-time {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   padding: 20px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  gap: 86px;
+  /* gap: 86px; */
 }
 
 .my-life--free-time--content {
@@ -908,9 +842,30 @@ footer p {
 /* ................... */
 /* Responsive   */
 /* ................... */
+@media (max-width: 400px) {
+  .max-width {
+    max-width: 400px;
+  }
 
-@media (max-width: 916px) {
-  body {
-    background: #000;
+  .nav .menu {
+    display: none;
+  }
+
+  .nav .menu-btn {
+    color: #095f6c;
+    width: 42px;
+  }
+
+  #about-card {
+    grid-template-columns: 1fr;
+  }
+
+  .my-photo-front {
+    width: 300px;
+    height: 300px;
+  }
+
+  .card-info {
+    grid-template-columns: 1fr;
   }
 }
