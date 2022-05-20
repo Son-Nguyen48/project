@@ -23,8 +23,8 @@ var num = 200;
 
 $(window).bind("scroll", function () {
   if ($(window).scrollTop() > num) {
-    $(".header").addClass("fixed");
+    $(".header .max-width").addClass("fixed");
   } else {
-    $(".header").removeClass("fixed");
+    $(".header .max-width").removeClass("fixed");
   }
 });

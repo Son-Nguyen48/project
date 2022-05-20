@@ -31,21 +31,28 @@ body {
   z-index: -1;
 } */
 
-.container {
-  width: 1200px;
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+.max-width {
+  max-width: 1350px;
   margin: 0 auto;
 }
 
-.header {
+.header .max-width {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
   line-height: 60px;
-  width: 1200px;
+  /* width: 1200px; */
   transition: 0.4s all ease;
   z-index: 999;
   /* border: 2px solid #095f6c; */
+  /* gap: 102px; */
+  padding: 0 50px;
 }
 
 .fixed {
@@ -145,6 +152,14 @@ h2 {
   /* margin-top: -300px;
   padding-top: 300px;
   display: inline-block; */
+}
+
+#about-me .max-width,
+#contact-me .max-width,
+#my-life .max-width,
+#quotes .max-width,
+#skill .max-width {
+  padding: 50px;
 }
 
 .about-me-title {
@@ -888,4 +903,14 @@ footer p {
   font-size: 18px;
   width: 400px;
   margin: 0 auto;
+}
+
+/* ................... */
+/* Responsive   */
+/* ................... */
+
+@media (max-width: 916px) {
+  body {
+    background: #000;
+  }
 }
