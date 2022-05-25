@@ -2,6 +2,38 @@
   .navbar .wide .menu__btn {
     display: block;
   }
+
+  .row.space_between {
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 2rem;
+  }
+
+  .navbar .wide .menu__btn {
+    --main-color: #1098ad;
+    display: block;
+    color: var(--main-color);
+    margin-right: 2rem;
+  }
+
+  .my-life .skills__technical,
+  .skills__description {
+    margin: 0 2rem;
+  }
+
+  .skills img {
+    height: 8.2rem;
+  }
+
+  .skills p {
+    text-align: center;
+  }
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -10,7 +42,16 @@
     display: block;
     color: var(--main-color);
   }
+
   .menu {
     display: none;
+  }
+
+  .row.space_between {
+    justify-content: space-between;
+  }
+
+  .skills__description__item {
+    margin-top: 4rem;
   }
 }

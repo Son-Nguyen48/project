@@ -12,10 +12,10 @@
   margin-right: -4px;
 }
 
-.row.no-gutters {
+/* .row.no-gutters {
   margin-left: 0px;
   margin-right: 0px;
-}
+} */
 
 .grid.wide {
   max-width: 1200px;
@@ -26,10 +26,10 @@
   padding-right: 4px;
 }
 
-.row.no-gutters .col {
+/* .row.no-gutters .col {
   margin-left: 0px;
   margin-right: 0px;
-}
+} */
 
 .c-0 {
   display: none;
