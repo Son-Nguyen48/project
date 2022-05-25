@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "first static web",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Son-Nguyen48/project.git"
+  },
+  "author": "td",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Son-Nguyen48/project/issues"
+  },
+  "homepage": "https://github.com/Son-Nguyen48/project#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

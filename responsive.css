@@ -1,0 +1,16 @@
+@media (max-width: 739px) {
+  .navbar .wide .menu__btn {
+    display: block;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .navbar .wide .menu__btn {
+    --main-color: #1098ad;
+    display: block;
+    color: var(--main-color);
+  }
+  .menu {
+    display: none;
+  }
+}

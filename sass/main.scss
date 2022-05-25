@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$main-color: #1098ad;
+$main-color-light: #e3fafc;
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  a {
+    text-decoration: none;
+  }
+  overflow-x: hidden;
+}
+
+.scroll_btn_up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: $main-color;
+  height: 44px;
+  width: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  color: $main-color-light;
+  z-index: 999;
+}
+
+section {
+  padding: 100px 0;
+  color: $main-color;
+  .wide {
+    h2 {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      color: $main-color;
+      margin-bottom: 74px;
+      &::before {
+        content: "";
+        height: 4px;
+        width: 200px;
+        background: $main-color;
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &::after {
+        content: "Just a boy";
+        position: absolute;
+        bottom: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        background: #fff;
+        padding: 0 12px;
+      }
+    }
+  }
+}
+
+.navbar {
+  .wide {
+    .logo {
+      padding: 12px;
+      a {
+        color: $main-color;
+      }
+    }
+    .menu__btn {
+      display: none;
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  .menu {
+    li {
+      display: inline-block;
+      padding: 12px;
+      a {
+        color: $main-color;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          height: 5px;
+          width: 0px;
+          transition: 600ms;
+        }
+
+        &:hover::before {
+          width: 100%;
+          background: $main-color;
+        }
+      }
+    }
+  }
+}
