@@ -163,16 +163,100 @@ section {
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 2rem;
+    align-items: center;
   }
 
   .skills__description__item {
+    height: calc(100% / 5 - 1.2rem);
     padding: 1rem;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
     border-radius: 1.2rem;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
     &:hover {
       opacity: 0.88;
       transform: scale(1.02);
+    }
+  }
+}
+
+.contact-infor {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 4rem;
+}
+
+// .contact-detail img {
+//   height: 70%;
+// }
+
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  p ~ p {
+    margin-top: 2rem;
+  }
+  img {
+    margin-top: 2rem;
+    border-radius: 0.8rem;
+  }
+}
+
+.contact-infor form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  .send-button {
+    width: 46%;
+    margin: 3rem auto 0 auto;
+  }
+
+  button {
+    width: 100%;
+    padding: 1.4rem;
+    color: $main-color-light;
+    background-color: $main-color;
+    border: 2px solid $main-color;
+    border-radius: 0.6rem;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: transparent;
+      color: #333;
+    }
+  }
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  input {
+    width: 78%;
+    margin: 0 auto;
+    padding: 0.6rem;
+    border: 0.2rem solid $main-color;
+    border-radius: 0.8rem;
+    color: $main-color;
+    &:focus-visible {
+      outline: none;
+      border: 0.2rem solid $main-color;
+      background-color: $main-color-light;
+    }
+  }
+
+  textarea {
+    padding: 0.6rem;
+    border-radius: 0.8rem;
+    border: 0.2rem solid $main-color;
+    color: $main-color;
+    &:focus-visible {
+      background-color: $main-color-light;
+      outline: none;
+      border: 0.2rem solid $main-color;
     }
   }
 }
