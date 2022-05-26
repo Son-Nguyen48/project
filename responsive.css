@@ -51,6 +51,14 @@
   .contact-icon {
     width: 50%;
   }
+
+  .my-photo-front {
+    width: 100%;
+  }
+
+  .card-info {
+    width: 100%;
+  }
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {

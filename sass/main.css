@@ -181,6 +181,7 @@ section .wide h2::after {
   color: black;
   background-size: cover;
   border-radius: 10px;
+  background-position: center;
 }
 
 .my-photo-back {
