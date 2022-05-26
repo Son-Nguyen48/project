@@ -126,6 +126,135 @@ section .wide h2::after {
   background: #1098ad;
 }
 
+.card-info .flip-card-back {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  border-radius: 10px;
+  margin-bottom: 2.4rem;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.my-photo-back {
+  color: #e3fafc;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/* Style the back side */
+.card-info .flip-card-back {
+  /* background-color: dodgerblue; */
+  color: #095f6c;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flip-card-back p {
+  text-align: center;
+}
+
+.born {
+  background-image: url("https://images.unsplash.com/flagged/photo-1551049215-23fd6d2ac3f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80");
+}
+
+.adress {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f5/Phong_c%E1%BA%A3nh_H%E1%BB%93_T%C3%A2y.jpg");
+}
+
+.body-status {
+  background-image: url("https://images.unsplash.com/photo-1537094082840-dcbbfa99385f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+
+.education {
+  background-image: url("https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+}
+
+.budget {
+  background-image: url("https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+
+.relationship {
+  background-image: url("https://images.unsplash.com/photo-1513279922550-250c2129b13a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+
+.me {
+  background-image: url("https://images.unsplash.com/photo-1535295972055-1c762f4483e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  border-radius: 10px;
+}
+
+.my-photo-front {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.my-photo-back {
+  background-image: url("https://scontent-hkt1-1.xx.fbcdn.net/v/t39.30808-6/280193376_532029461762486_2409812261949373109_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=2Tmk1OP1CjgAX-VA-V9&_nc_ht=scontent-hkt1-1.xx&oh=00_AT_b6UTDUYmOVQVbryzcsB5UOWRnxNFDjnW9yE6y4a0X2A&oe=628AA544");
+  background-size: cover;
+  border-radius: 10px;
+}
+
 .my-life--short {
   margin-bottom: 4rem;
   padding: 2rem;
@@ -303,5 +432,166 @@ section .wide h2::after {
   background-color: #e3fafc;
   outline: none;
   border: 0.2rem solid #1098ad;
+}
+
+.contact-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  margin: 5.4rem auto 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-icon .contact-icon__item a span {
+  display: inline-block;
+  width: 4.2rem;
+  height: 4.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.contact-icon .contact-icon__item svg {
+  color: #333;
+}
+
+.contact-icon .contact-icon__item:hover svg {
+  color: #fff;
+}
+
+.contact-icon .facebook:hover span {
+  background-color: #3b5999;
+}
+
+.contact-icon .twitter:hover span {
+  background-color: #46c1f6;
+}
+
+.contact-icon .instagram:hover span {
+  background-color: #e1306c;
+}
+
+.contact-icon .github:hover span {
+  background-color: #333333;
+}
+
+.contact-icon .linkedin:hover span {
+  background-color: #3755ff;
+}
+
+.contact-icon .contact-icon__hover {
+  /*style box appear when hover span*/
+  font-size: 14px;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.contact-icon__hover::before {
+  /*Style box appear when hover span*/
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translate(-50%, 20%) rotate(45deg);
+          transform: translate(-50%, 20%) rotate(45deg);
+  bottom: 0;
+  left: 50%;
+}
+
+.facebook span:hover .contact-icon__hover {
+  /*Style color, and position box appear when hover span*/
+  background: #3b5999;
+  opacity: 1;
+  -webkit-transform: translate(-25%, -120%);
+          transform: translate(-25%, -120%);
+}
+
+.twitter span:hover .contact-icon__hover {
+  background: #46c1f6;
+  opacity: 1;
+  -webkit-transform: translate(-12%, -120%);
+          transform: translate(-12%, -120%);
+}
+
+.instagram span:hover .contact-icon__hover {
+  background: #e1306c;
+  opacity: 1;
+  -webkit-transform: translate(-22%, -120%);
+          transform: translate(-22%, -120%);
+}
+
+.github span:hover .contact-icon__hover {
+  background: #333333;
+  opacity: 1;
+  -webkit-transform: translate(-14%, -120%);
+          transform: translate(-14%, -120%);
+}
+
+.linkedin span:hover .contact-icon__hover {
+  background: #3755ff;
+  opacity: 1;
+  -webkit-transform: translate(-18%, -120%);
+          transform: translate(-18%, -120%);
+}
+
+.facebook .contact-icon__hover::before {
+  background: #3b5999;
+  -webkit-transform: translate(-50%, 20%) rotate(45deg);
+          transform: translate(-50%, 20%) rotate(45deg);
+}
+
+.twitter .contact-icon__hover::before {
+  background: #46c1f6;
+  -webkit-transform: translate(-50%, 20%) rotate(45deg);
+          transform: translate(-50%, 20%) rotate(45deg);
+}
+
+.instagram .contact-icon__hover::before {
+  background: #e1306c;
+  -webkit-transform: translate(-50%, 20%) rotate(45deg);
+          transform: translate(-50%, 20%) rotate(45deg);
+}
+
+.github .contact-icon__hover::before {
+  background: #333333;
+  -webkit-transform: translate(-50%, 20%) rotate(45deg);
+          transform: translate(-50%, 20%) rotate(45deg);
+}
+
+.linkedin .contact-icon__hover::before {
+  background: #3755ff;
+  -webkit-transform: translate(-50%, 20%) rotate(45deg);
+          transform: translate(-50%, 20%) rotate(45deg);
+}
+
+.contact-icon__hover {
+  opacity: 0;
+  -webkit-transition: 0.5s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 0.5s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+footer p {
+  text-align: center;
+  width: 50rem;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */

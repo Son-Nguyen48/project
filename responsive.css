@@ -38,6 +38,19 @@
   .skills__description__item {
     margin-top: 1.8rem;
   }
+
+  .contact-detail img {
+    width: 100%;
+  }
+
+  .contact-infor form {
+    width: 100%;
+    margin-top: 3.2rem;
+  }
+
+  .contact-icon {
+    width: 50%;
+  }
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -61,6 +74,10 @@
 
   .contact-infor form {
     margin-top: 3.2rem;
+  }
+
+  .contact-icon {
+    width: 50%;
   }
 }
 
