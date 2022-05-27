@@ -140,6 +140,10 @@ section .wide h2::after {
   background: #e3fafc;
 }
 
+.navbar .menu .menu__btn.nav {
+  display: inline;
+}
+
 .card-info .flip-card-back {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -195,6 +199,10 @@ section .wide h2::after {
   color: black;
   background-size: cover;
   border-radius: 10px;
+  background-position: center;
+}
+
+.flip-card-back {
   background-position: center;
 }
 

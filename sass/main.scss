@@ -139,6 +139,9 @@ section {
       }
     }
   }
+  .menu .menu__btn.nav {
+    display: inline;
+  }
 }
 
 .card-info .flip-card-back {
@@ -193,6 +196,10 @@ section {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  background-position: center;
+}
+
+.flip-card-back {
   background-position: center;
 }
 
