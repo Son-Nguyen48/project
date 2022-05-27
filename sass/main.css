@@ -460,6 +460,7 @@ section .wide h2::after {
 }
 
 .skills .download-cv {
+  display: block;
   width: 20%;
   padding: 1.2rem 2rem;
   text-align: center;
@@ -467,18 +468,13 @@ section .wide h2::after {
   border-radius: 0.8rem;
   margin: 0 auto;
   background-color: #1098ad;
-}
-
-.skills .download-cv a {
   color: #e3fafc;
 }
 
-.skills .download-cv a:hover {
-  color: #1098ad;
-}
-
 .skills .download-cv:hover {
+  cursor: pointer;
   background-color: transparent;
+  color: #1098ad;
 }
 
 .contact-infor {

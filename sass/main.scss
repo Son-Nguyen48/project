@@ -425,6 +425,7 @@ section {
   }
 
   .download-cv {
+    display: block;
     width: 20%;
     padding: 1.2rem 2rem;
     text-align: center;
@@ -432,14 +433,11 @@ section {
     border-radius: 0.8rem;
     margin: 0 auto;
     background-color: $main-color;
-    a {
-      color: $main-color-light;
-      &:hover {
-        color: $main-color;
-      }
-    }
+    color: $main-color-light;
     &:hover {
+      cursor: pointer;
       background-color: transparent;
+      color: $main-color;
     }
   }
 }

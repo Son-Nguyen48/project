@@ -91,6 +91,10 @@
     margin-top: 1.8rem;
   }
 
+  .skills .download-cv {
+    width: 40%;
+  }
+
   .contact-detail img {
     width: 100%;
   }
