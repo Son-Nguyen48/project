@@ -43,6 +43,11 @@ p {
   cursor: pointer;
   color: #e3fafc;
   z-index: 999;
+  opacity: 0;
+}
+
+.scroll_btn_up.show {
+  opacity: 1;
 }
 
 section {
@@ -86,12 +91,21 @@ section .wide h2::after {
   padding: 0 12px;
 }
 
+.navbar {
+  background-color: #1098ad;
+  position: fixed;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
 .navbar .wide .logo {
   padding: 12px;
 }
 
 .navbar .wide .logo a {
-  color: #1098ad;
+  color: #e3fafc;
 }
 
 .navbar .wide .menu__btn {
@@ -106,7 +120,7 @@ section .wide h2::after {
 }
 
 .navbar .menu li a {
-  color: #1098ad;
+  color: #e3fafc;
   position: relative;
 }
 
@@ -123,7 +137,7 @@ section .wide h2::after {
 
 .navbar .menu li a:hover::before {
   width: 100%;
-  background: #1098ad;
+  background: #e3fafc;
 }
 
 .card-info .flip-card-back {

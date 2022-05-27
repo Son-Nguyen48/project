@@ -1,3 +1,7 @@
+--root {
+  --main-color: #1098ad;
+}
+
 @media (max-width: 739px) {
   .navbar .wide .menu__btn {
     display: block;
@@ -16,9 +20,9 @@
   }
 
   .navbar .wide .menu__btn {
-    --main-color: #1098ad;
+    --main-color-light: #e3fafc;
     display: block;
-    color: var(--main-color);
+    color: var(--main-color-light);
     margin-right: 2rem;
   }
 
@@ -52,20 +56,60 @@
     width: 50%;
   }
 
-  .my-photo-front {
+  .card-info {
     width: 100%;
   }
 
-  .card-info {
-    width: 100%;
+  /* .navbar .wide .menu__btn {
+    height: 5.1rem;
+    display: flex;
+    align-items: center;
+  } */
+
+  .navbar .menu {
+    display: block;
+    position: fixed;
+    background: #333;
+    height: 100vh;
+    width: 30%;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding-top: 80px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    right: 0;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 1.8rem;
+  }
+  .navbar .menu__btn {
+    display: block;
+    z-index: 999;
+    line-height: 5.8rem;
+  }
+
+  .menu__btn i {
+    font-size: 2.4rem;
+  }
+
+  .navbar .menu__btn i.active::before {
+    content: "\f00d";
   }
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
   .navbar .wide .menu__btn {
-    --main-color: #1098ad;
+    --main-color-light: #e3fafc;
     display: block;
-    color: var(--main-color);
+    color: var(--main-color-light);
   }
 
   .menu {
@@ -86,6 +130,51 @@
 
   .contact-icon {
     width: 50%;
+  }
+
+  .navbar .wide .menu__btn {
+    height: 5.1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .menu {
+    display: block;
+    position: fixed;
+    background: #333;
+    height: 100vh;
+    width: 30%;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding-top: 80px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    right: 0;
+  }
+
+  .navbar .menu li {
+    display: block;
+  }
+
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+  .navbar .menu__btn {
+    display: block;
+    z-index: 999;
+  }
+
+  .navbar .menu__btn i.active::before {
+    content: "\f00d";
+  }
+  .menu__btn i {
+    font-size: 2.4rem;
   }
 }
 

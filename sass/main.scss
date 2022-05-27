@@ -51,6 +51,11 @@ p {
   cursor: pointer;
   color: $main-color-light;
   z-index: 999;
+  opacity: 0;
+}
+
+.scroll_btn_up.show {
+  opacity: 1;
 }
 
 section {
@@ -88,11 +93,19 @@ section {
 }
 
 .navbar {
+  background-color: $main-color;
+  position: fixed;
+  width: 100%;
+  // padding: 30px 0;
+  // font-family: "Ubuntu", sans-serif;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 999;
   .wide {
     .logo {
       padding: 12px;
       a {
-        color: $main-color;
+        color: $main-color-light;
       }
     }
     .menu__btn {
@@ -107,7 +120,7 @@ section {
       display: inline-block;
       padding: 12px;
       a {
-        color: $main-color;
+        color: $main-color-light;
         position: relative;
         &::before {
           content: "";
@@ -121,7 +134,7 @@ section {
 
         &:hover::before {
           width: 100%;
-          background: $main-color;
+          background: $main-color-light;
         }
       }
     }
