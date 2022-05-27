@@ -294,6 +294,108 @@ section .wide h2::after {
   border-radius: 12px;
 }
 
+.item {
+  background-color: #095f6c;
+  width: 1090px;
+  margin: 20px auto 200px auto;
+  border-radius: 8px;
+  color: #fff;
+  padding: 32px;
+  padding-left: 86px;
+  padding-right: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 86px;
+  position: relative;
+  -webkit-box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+.owl-nav {
+  position: absolute;
+  background-color: #333;
+  top: 32%;
+  width: 100%;
+}
+
+.owl-prev {
+  position: absolute;
+  left: 4%;
+  -webkit-transform: translateX(-44%);
+          transform: translateX(-44%);
+  /* z-index: -1; */
+}
+
+.owl-next {
+  position: absolute;
+  right: 4%;
+  -webkit-transform: translateX(44%);
+          transform: translateX(44%);
+  /* z-index: -1; */
+}
+
+.owl-nav button span {
+  width: 42px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  color: #095f6c;
+  -webkit-box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: #fff;
+  color: #087352;
+  border-radius: 50%;
+}
+
+.owl-stage-outer {
+  height: 34.2rem;
+}
+
+.owl-carousel .owl-item img {
+  width: 20rem;
+  height: 20rem;
+  -webkit-transform: scale(1.52);
+          transform: scale(1.52);
+  border-radius: 0.6rem;
+  -webkit-box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.owl-dot,
+.owl-next,
+.owl-prev {
+  width: auto;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #095f6c !important;
+}
+
 .skills img {
   height: 10.6rem;
 }
@@ -355,6 +457,28 @@ section .wide h2::after {
   opacity: 0.88;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+.skills .download-cv {
+  width: 20%;
+  padding: 1.2rem 2rem;
+  text-align: center;
+  border: 0.2rem solid #1098ad;
+  border-radius: 0.8rem;
+  margin: 0 auto;
+  background-color: #1098ad;
+}
+
+.skills .download-cv a {
+  color: #e3fafc;
+}
+
+.skills .download-cv a:hover {
+  color: #1098ad;
+}
+
+.skills .download-cv:hover {
+  background-color: transparent;
 }
 
 .contact-infor {

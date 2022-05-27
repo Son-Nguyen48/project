@@ -92,6 +92,10 @@ section {
   }
 }
 
+//---------------//
+// Navbar section//
+//---------------//
+
 .navbar {
   background-color: $main-color;
   position: fixed;
@@ -143,6 +147,10 @@ section {
     display: inline;
   }
 }
+
+//-----------------//
+// About me section//
+//-----------------//
 
 .card-info .flip-card-back {
   align-items: center;
@@ -281,6 +289,98 @@ section {
   border-radius: 12px;
 }
 
+//---------------//
+// Quotes section//
+//---------------//
+.item {
+  background-color: #095f6c;
+  width: 1090px;
+  margin: 20px auto 200px auto;
+  border-radius: 8px;
+  color: #fff;
+  padding: 32px;
+  padding-left: 86px;
+  padding-right: 48px;
+  display: flex;
+  align-items: center;
+  gap: 86px;
+  position: relative;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+.owl-nav {
+  position: absolute;
+  background-color: #333;
+  top: 32%;
+  width: 100%;
+}
+
+.owl-prev {
+  position: absolute;
+  left: 4%;
+  transform: translateX(-44%);
+  /* z-index: -1; */
+}
+
+.owl-next {
+  position: absolute;
+  right: 4%;
+  transform: translateX(44%);
+  /* z-index: -1; */
+}
+
+.owl-nav button span {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #095f6c;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: #fff;
+  color: #087352;
+  border-radius: 50%;
+}
+
+.owl-stage-outer {
+  height: 34.2rem;
+}
+
+.owl-carousel .owl-item img {
+  width: 20rem;
+  height: 20rem;
+  transform: scale(1.52);
+  border-radius: 0.6rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.owl-dot,
+.owl-next,
+.owl-prev {
+  width: auto;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #095f6c !important;
+}
+
+//---------------//
+// Skills section//
+//---------------//
+
 .skills {
   img {
     height: 10.6rem;
@@ -323,7 +423,30 @@ section {
       transform: scale(1.02);
     }
   }
+
+  .download-cv {
+    width: 20%;
+    padding: 1.2rem 2rem;
+    text-align: center;
+    border: 0.2rem solid $main-color;
+    border-radius: 0.8rem;
+    margin: 0 auto;
+    background-color: $main-color;
+    a {
+      color: $main-color-light;
+      &:hover {
+        color: $main-color;
+      }
+    }
+    &:hover {
+      background-color: transparent;
+    }
+  }
 }
+
+//----------------//
+// Contact section//
+//----------------//
 
 .contact-infor {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);

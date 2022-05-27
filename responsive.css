@@ -69,6 +69,11 @@
     width: 100%;
   }
 
+  .my-photo-front {
+    height: 60rem;
+    width: 100%;
+  }
+
   .my-life .skills__technical,
   .skills__description {
     margin: 0 2rem;
