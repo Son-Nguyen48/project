@@ -92,7 +92,7 @@ section .wide h2::after {
 }
 
 .navbar {
-  background-color: #1098ad;
+  background-color: #fff;
   position: fixed;
   width: 100%;
   -webkit-transition: all 0.3s ease;
@@ -105,7 +105,7 @@ section .wide h2::after {
 }
 
 .navbar .wide .logo a {
-  color: #e3fafc;
+  color: #1098ad;
 }
 
 .navbar .wide .menu__btn {
@@ -120,7 +120,7 @@ section .wide h2::after {
 }
 
 .navbar .menu li a {
-  color: #e3fafc;
+  color: #1098ad;
   position: relative;
 }
 
@@ -137,11 +137,47 @@ section .wide h2::after {
 
 .navbar .menu li a:hover::before {
   width: 100%;
-  background: #e3fafc;
+  background: #1098ad;
 }
 
 .navbar .menu .menu__btn.nav {
   display: inline;
+}
+
+.navbar.sticky {
+  background: #1098ad;
+}
+
+.navbar.sticky .logo a {
+  color: #333;
+}
+
+.navbar.sticky .logo a i:hover {
+  color: #c0ffff;
+}
+
+.navbar.sticky .menu li a {
+  color: #c0ffff;
+}
+
+.navbar.sticky .menu li a::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 5px;
+  width: 0px;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+
+.navbar.sticky .menu li a:hover::before {
+  width: 100%;
+  background: #c0ffff;
+}
+
+.navbar.sticky .menu li a:hover {
+  color: #c0ffff;
 }
 
 .card-info .flip-card-back {
@@ -273,7 +309,7 @@ section .wide h2::after {
 }
 
 .my-photo-back {
-  background-image: url("https://scontent-hkt1-1.xx.fbcdn.net/v/t39.30808-6/280193376_532029461762486_2409812261949373109_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=2Tmk1OP1CjgAX-VA-V9&_nc_ht=scontent-hkt1-1.xx&oh=00_AT_b6UTDUYmOVQVbryzcsB5UOWRnxNFDjnW9yE6y4a0X2A&oe=628AA544");
+  background-image: url("/img/mybg.jpg");
   background-size: cover;
   border-radius: 10px;
 }
@@ -296,7 +332,6 @@ section .wide h2::after {
 
 .item {
   background-color: #095f6c;
-  width: 1090px;
   margin: 20px auto 200px auto;
   border-radius: 8px;
   color: #fff;
@@ -402,6 +437,10 @@ section .wide h2::after {
 
 .skills .skills__technical__item {
   margin-bottom: 2rem;
+}
+
+.skills .skills__technical__item p {
+  text-align: center;
 }
 
 .skills .item-box {

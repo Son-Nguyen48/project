@@ -22,7 +22,13 @@
   .navbar .wide .menu__btn {
     --main-color-light: #e3fafc;
     display: block;
-    color: var(--main-color-light);
+    color: #1098ad;
+    margin-right: 2rem;
+  }
+
+  .navbar.sticky .wide .menu__btn {
+    display: block;
+    color: #e3fafc;
     margin-right: 2rem;
   }
 
@@ -51,6 +57,11 @@
     margin: 20px 0;
     font-size: 1.8rem;
   }
+
+  .navbar.sticky .menu li a {
+    color: var(--main-color-light);
+  }
+
   .navbar .menu__btn {
     display: block;
     z-index: 999;
@@ -63,6 +74,11 @@
 
   .navbar .menu__btn i.active::before {
     content: "\f00d";
+  }
+
+  .navbar.sticky .menu .menu__btn.nav {
+    display: inline;
+    color: #c0ffff;
   }
 
   .card-info {
@@ -111,9 +127,19 @@
 
 @media (min-width: 740px) and (max-width: 1023px) {
   .navbar .wide .menu__btn {
-    --main-color-light: #e3fafc;
     display: block;
-    color: var(--main-color-light);
+    color: #1098ad;
+  }
+
+  .navbar.sticky .wide .menu__btn {
+    display: block;
+    color: #e3fafc;
+    font-size: 2.4rem;
+  }
+
+  .navbar.sticky .menu .menu__btn.nav {
+    display: inline;
+    color: #c0ffff;
   }
 
   .menu {
@@ -121,6 +147,12 @@
   }
 
   .navbar .wide .menu__btn {
+    height: 5.1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar.sticky .wide .menu__btn {
     height: 5.1rem;
     display: flex;
     align-items: center;

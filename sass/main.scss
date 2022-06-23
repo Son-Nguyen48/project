@@ -97,7 +97,7 @@ section {
 //---------------//
 
 .navbar {
-  background-color: $main-color;
+  background-color: #fff;
   position: fixed;
   width: 100%;
   // padding: 30px 0;
@@ -109,7 +109,7 @@ section {
     .logo {
       padding: 12px;
       a {
-        color: $main-color-light;
+        color: $main-color;
       }
     }
     .menu__btn {
@@ -124,7 +124,7 @@ section {
       display: inline-block;
       padding: 12px;
       a {
-        color: $main-color-light;
+        color: $main-color;
         position: relative;
         &::before {
           content: "";
@@ -138,7 +138,7 @@ section {
 
         &:hover::before {
           width: 100%;
-          background: $main-color-light;
+          background: $main-color;
         }
       }
     }
@@ -146,6 +146,39 @@ section {
   .menu .menu__btn.nav {
     display: inline;
   }
+}
+
+.navbar.sticky {
+  background: $main-color;
+}
+
+.navbar.sticky .logo a {
+  color: #333;
+}
+
+.navbar.sticky .logo a i:hover {
+  color: #c0ffff;
+}
+
+.navbar.sticky .menu li a {
+  color: #c0ffff;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 5px;
+    width: 0px;
+    transition: 600ms;
+  }
+  &:hover::before {
+    width: 100%;
+    background: #c0ffff;
+  }
+}
+
+.navbar.sticky .menu li a:hover {
+  color: #c0ffff;
 }
 
 //-----------------//
@@ -268,7 +301,7 @@ section {
 }
 
 .my-photo-back {
-  background-image: url("https://scontent-hkt1-1.xx.fbcdn.net/v/t39.30808-6/280193376_532029461762486_2409812261949373109_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=2Tmk1OP1CjgAX-VA-V9&_nc_ht=scontent-hkt1-1.xx&oh=00_AT_b6UTDUYmOVQVbryzcsB5UOWRnxNFDjnW9yE6y4a0X2A&oe=628AA544");
+  background-image: url("/img/mybg.jpg");
   background-size: cover;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -294,7 +327,7 @@ section {
 //---------------//
 .item {
   background-color: #095f6c;
-  width: 1090px;
+  // width: 1090px;
   margin: 20px auto 200px auto;
   border-radius: 8px;
   color: #fff;
@@ -388,6 +421,9 @@ section {
 
   .skills__technical__item {
     margin-bottom: 2rem;
+    p {
+      text-align: center;
+    }
   }
 
   .item-box {
