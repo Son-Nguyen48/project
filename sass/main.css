@@ -243,7 +243,7 @@ section .wide h2::after {
 }
 
 .my-photo-back {
-  color: #e3fafc;
+  color: #1098ad;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
