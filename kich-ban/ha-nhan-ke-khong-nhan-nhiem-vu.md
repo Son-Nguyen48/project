@@ -57,7 +57,11 @@ ancient Chinese ornamental frame, text on it is blurred and unreadable.
 
 ## PHẦN 2. CÁCH LÀM VIDEO 30 PHÚT VỚI GEMINI
 
-Gemini (Veo) chỉ tạo khoảng **8 giây mỗi clip**, nên không thể ra 30 phút trong một lần. Quy trình đề xuất:
+Gemini chỉ tạo khoảng **8–10 giây mỗi clip**, nên không thể ra 30 phút trong một lần.
+
+> **Danh sách 180 clip 10 giây có prompt dán sẵn nằm ở file `danh-sach-180-clip.md`.** Thời gian các cảnh bên dưới đã khớp với danh sách đó.
+
+Quy trình đề xuất:
 
 1. **Lời thuyết minh làm riêng bằng TTS** (Gemini TTS trong Google AI Studio, Vbee, FPT.AI, ElevenLabs...). Đọc chậm, khoảng 120–130 âm tiết/phút, nghỉ 1–2 giây giữa các đoạn. Toàn bộ lời đọc dài khoảng 25 phút, phần còn lại là cảnh hành động và khoảng lặng có nhạc.
 2. **Mỗi cảnh tạo 1–2 clip Veo 8 giây** cho khoảnh khắc chính, phần còn lại dùng **ảnh tĩnh** (Gemini/Imagen) với hiệu ứng zoom chậm (Ken Burns).
@@ -80,21 +84,21 @@ Audio: ambient sound and soft guzheng music only, no dialogue.
 
 ### CHƯƠNG 1 — TỈNH GIẤC Ở THANH VÂN TÔNG (00:00 – 03:00)
 
-**Cảnh 1.1 (00:00 – 00:35)**
+**Cảnh 1.1 (00:00 – 00:40)**
 - **Prompt hình:** Modern city office at night, a tired young man in a white shirt sits alone in front of glowing spreadsheets and charts, rain on the window. The monitor suddenly flickers with a strange blue light, the room dissolves into falling black ink and white mist.
 - **Thuyết minh:**
   > Hà Nhân, hai mươi bảy tuổi, chuyên viên phân tích dữ liệu. Cả đời anh tin vào một điều: mọi chuyện trên đời đều có quy luật, chỉ cần đủ dữ kiện. Đêm hôm đó, khi đang tăng ca lần thứ ba trong tuần, màn hình trước mặt anh bỗng lóe lên một thứ ánh sáng không thuộc về thế giới này.
   >
   > Anh không tin vào số mệnh, cũng không tin vào may mắn. Anh chỉ tin vào bảng tính, vào những con số không biết nói dối. Nhưng đêm nay, những con số ấy bắt đầu nhảy múa vô nghĩa, rồi tan ra như mực loang trong nước.
 
-**Cảnh 1.2 (00:35 – 01:15)**
+**Cảnh 1.2 (00:40 – 01:20)**
 - **Prompt hình:** Ha Nhan wakes up on a broken wooden bed in a cramped, dusty hut on a mountainside, bruises on his face, morning light through cracks in the wall. Quick flashes of memories: a boy being beaten by other disciples in the night forest.
 - **Thuyết minh:**
   > Khi mở mắt, anh nằm trên một tấm phản gỗ mục, toàn thân đau như bị ai dần. Một dòng ký ức xa lạ ùa vào đầu. Thân thể này cũng tên Hà Nhân, mười bảy tuổi, đệ tử ngoại môn của Thanh Vân Tông. Ba năm tu luyện, vẫn kẹt ở Luyện Khí tầng một. Người ta gọi cậu bằng hai chữ: phế vật. Và đêm qua, cậu bị Triệu Khôn đánh đến chết sau núi, chỉ vì không chịu nộp nửa viên đan dược hằng tháng.
   >
   > Hà Nhân nằm im rất lâu. Anh không la hét, không hoảng loạn. Anh chỉ lặng lẽ đếm. Mái nhà dột ba chỗ. Trong túi có hai khối linh thạch hạ phẩm. Trên người có bảy vết bầm. Thói quen cũ khó bỏ. Trước khi hiểu mình đang ở đâu, anh cần biết mình đang có gì.
 
-**Cảnh 1.3 (01:15 – 02:05)**
+**Cảnh 1.3 (01:20 – 02:10)**
 - **Prompt hình:** Close-up of Ha Nhan's surprised face, a glowing blue holographic panel with golden borders appears in front of him with a soft chime, light reflecting in his eyes.
 - **Thuyết minh:**
   > Một tiếng "đinh" vang lên trong đầu. Trước mắt anh hiện ra một tấm bảng sáng xanh.
@@ -103,7 +107,7 @@ Audio: ambient sound and soft guzheng music only, no dialogue.
 - **Thuyết minh:**
   > Người khác có lẽ đã mừng phát điên. Truyện mạng anh đọc không ít. Nhân vật chính có hệ thống, từ phế vật thành thiên tài chỉ là chuyện vài chương. Nhưng Hà Nhân chỉ nhìn chằm chằm vào tấm bảng.
 
-**Cảnh 1.4 (02:05 – 03:00)**
+**Cảnh 1.4 (02:10 – 03:00)**
 - **Prompt hình:** Ha Nhan sits still on the bed, staring at the floating panel with narrowed, thoughtful eyes, his hand stops just before touching the glowing "accept" button. The panel slowly fades but stays faintly visible.
 - **Hà Nhân (nội tâm):**
   > Một viên Tẩy Tủy Đan, ở ngoại môn đủ để đổi cả một mạng người. Đổi lấy một gốc cỏ? Giá lệch như vậy chỉ có hai khả năng. Hoặc gốc cỏ đó nguy hiểm hơn mình tưởng. Hoặc cái giá thật sự chưa được ghi ra.
@@ -121,22 +125,22 @@ Audio: ambient sound and soft guzheng music only, no dialogue.
   >
   > Chỉ trong ba ngày, anh biết ngoại môn có hơn ba nghìn đệ tử, nhưng mỗi năm chưa đến ba mươi người vào được nội môn. Anh biết đan dược được phát vào ngày rằm, và biết luôn kẻ nào thu tiền bảo kê ở từng dãy nhà. Thế giới tu tiên, hóa ra cũng vận hành như một công ty lớn. Chỉ là tàn nhẫn hơn.
 
-**Cảnh 2.2 (03:40 – 04:20)**
+**Cảnh 2.2 (03:40 – 04:10)**
 - **Prompt hình:** Flashback in faded sepia tone: another young disciple in the same hut, excited, standing before the same blue holographic panel, swallowing glowing pills, golden energy bursting around him.
 - **Thuyết minh:**
   > Chủ nhân cuốn sổ là Đỗ Thanh, người từng ở căn phòng này. Trang đầu tiên viết: "Ta có hệ thống. Ta sẽ trở thành người mạnh nhất Thanh Vân Tông." Những trang sau, nét chữ ngày càng hăng hái. Hoàn thành nhiệm vụ. Nhận đan dược. Nhận công pháp. Đột phá liên tục.
 
-**Cảnh 2.3 (04:20 – 05:00)**
+**Cảnh 2.3 (04:10 – 04:50)**
 - **Prompt hình:** Close-up of diary pages, the handwriting becomes shaky and messy, ink smudged. The flashback disciple sits in a dark corner holding his head, his face blurred as if being erased.
 - **Thuyết minh:**
   > Rồi nét chữ bắt đầu run. "Ta không còn nhớ mặt mẹ ta." "Hôm nay ta quên tên mình mất nửa canh giờ." "Mỗi phần thưởng, nó lấy đi một thứ. Nó gọi đó là phí." Trang cuối chỉ còn một dòng, viết nguệch ngoạc: "Đừng nhận. Đừng bao giờ nhận."
 
-**Cảnh 2.4 (05:00 – 05:30)**
+**Cảnh 2.4 (04:50 – 05:20)**
 - **Prompt hình:** Night, full moon over a steep western cliff of a misty mountain. At the bottom of the cliff, a body lies in the grass, one hand still gripping a blood-red glowing herb.
 - **Thuyết minh:**
   > Hà Nhân khéo léo hỏi vài sư huynh lâu năm. Một năm trước, Đỗ Thanh là ngôi sao mới của ngoại môn. Rồi một đêm trăng tròn, người ta tìm thấy xác hắn dưới vách đá phía tây Hậu Sơn. Trong tay vẫn nắm chặt một gốc Huyết Linh Thảo.
 
-**Cảnh 2.5 (05:30 – 06:00)**
+**Cảnh 2.5 (05:20 – 06:00)**
 - **Prompt hình:** Ha Nhan sits by a small oil lamp, opens his own notebook and writes with charcoal. Behind him the blue panel glows faintly like a silent watcher.
 - **Hà Nhân:**
   > Được. Ta sẽ không dùng ngươi. Nhưng ngươi cứ việc phát nhiệm vụ.
@@ -149,31 +153,31 @@ Audio: ambient sound and soft guzheng music only, no dialogue.
 
 ### CHƯƠNG 3 — ĐÊM TRĂNG MÁU Ở HẬU SƠN (06:00 – 09:00)
 
-**Cảnh 3.1 (06:00 – 06:35)**
+**Cảnh 3.1 (06:00 – 06:30)**
 - **Prompt hình:** The blue panel appears again, larger and brighter than before, with a golden glowing reward icon. Ha Nhan, holding a broom in the courtyard, looks up at it calmly.
 - **Hệ thống:**
   > Đinh! Nhiệm vụ mới: trong đêm trăng tròn sắp tới, bảo vệ Lâm Thanh Dao tại Hậu Sơn. Phần thưởng: ba viên Trúc Cơ Đan và Thanh Vân Kiếm Quyết.
 - **Thuyết minh:**
   > Phần thưởng lớn đến mức vô lý cho một đệ tử Luyện Khí tầng một. Và chính vì vô lý, Hà Nhân càng chú ý.
 
-**Cảnh 3.2 (06:35 – 07:20)**
+**Cảnh 3.2 (06:30 – 07:10)**
 - **Prompt hình:** Close-up of Ha Nhan's notebook as he writes notes and draws a rough map of the mountain with a circle on the western cliff and a drawing of a full moon. Candlelight, focused expression.
 - **Hà Nhân (nội tâm):**
   > Thời hạn là đêm trăng tròn, vậy sự việc sẽ xảy ra đêm đó. Địa điểm là Hậu Sơn, đúng nơi Đỗ Thanh chết. Lâm Thanh Dao là cháu gái Mộc trưởng lão. Phần thưởng lớn nghĩa là nguy hiểm lớn. Hệ thống không cần ta cứu nàng. Nó cần ta có mặt ở đó.
 
-**Cảnh 3.3 (07:20 – 08:00)**
+**Cảnh 3.3 (07:10 – 07:50)**
 - **Prompt hình:** Daytime on the western cliff, Ha Nhan crouches behind rocks and discovers seven black array flags half-buried in the soil, faint red mist leaking out. He carefully sketches their positions without touching them.
 - **Thuyết minh:**
   > Ban ngày, Hà Nhân lên Hậu Sơn. Không phải để hái cỏ, mà để quan sát. Dưới mấy tảng đá quanh vách tây, anh tìm thấy bảy lá cờ trận màu đen chôn nửa chừng, tỏa ra mùi tanh nhàn nhạt. Một trận pháp hút máu. Anh không động vào. Anh chỉ vẽ lại vị trí, rồi mang bản vẽ đến Chấp Pháp Đường.
 
-**Cảnh 3.4 (08:00 – 08:35)**
+**Cảnh 3.4 (07:50 – 08:30)**
 - **Prompt hình:** Full moon night, Lam Thanh Dao gathering herbs near the cliff. A masked figure in black robes leaps out from the shadows, but several elders in white robes appear instantly with glowing swords and capture him. A black lotus symbol is visible on the attacker's collar.
 - **Thuyết minh:**
   > Đêm trăng tròn, một kẻ bịt mặt lao ra từ bóng tối. Nhưng lần này, các trưởng lão Chấp Pháp Đường đã chờ sẵn. Hắn bị bắt gọn. Trên cổ áo hắn có thêu một đóa sen đen, dấu hiệu của Huyết Liên Giáo.
   >
   > Lâm Thanh Dao bình an vô sự. Nàng không hề biết, mạng sống của mình vừa được cứu bởi một tờ giấy vẽ nguệch ngoạc của một đệ tử ngoại môn mà nàng chưa từng nghe tên.
 
-**Cảnh 3.5 (08:35 – 09:00)**
+**Cảnh 3.5 (08:30 – 09:00)**
 - **Prompt hình:** Ha Nhan stands alone on a distant rooftop watching the scene. The blue panel flickers in front of him and cracks slightly. He shows a faint, small smile for the first time.
 - **Hệ thống:**
   > Nhiệm vụ thất bại. Nguyên nhân: xuất hiện biến số ngoài dự kiến.
@@ -196,14 +200,14 @@ Audio: ambient sound and soft guzheng music only, no dialogue.
   > Bốn: hệ thống không thể nói dối trong nhiệm vụ, vì nhiệm vụ là khế ước. Khế ước sai thì không thu được phí.
   > Năm: hệ thống luôn đẩy ký chủ đến nơi có biến cố. Câu hỏi là: nó cần biến cố để làm gì?
 
-**Cảnh 4.2 (09:50 – 10:30)**
+**Cảnh 4.2 (09:50 – 10:20)**
 - **Prompt hình:** The blue panel shows a new, oddly simple quest. Ha Nhan looks down at a plain wooden bowl of rice in his hands with suspicion.
 - **Hệ thống:**
   > Nhiệm vụ: ăn hết khẩu phần cơm ngoại môn trong ba mươi ngày liên tục. Phần thưởng: đột phá Luyện Khí tầng ba.
 - **Thuyết minh:**
   > Một nhiệm vụ quá dễ, với phần thưởng quá hậu. Theo quy tắc số hai, bát cơm này có vấn đề.
 
-**Cảnh 4.3 (10:30 – 11:10)**
+**Cảnh 4.3 (10:20 – 11:10)**
 - **Prompt hình:** Ha Nhan dips a silver needle into the rice, the needle turns faint grey. He watches a small mouse eating a grain of rice and falling weakly asleep. Then he meditates under a waterfall, faint blue energy flowing more freely through his body.
 - **Thuyết minh:**
   > Anh thử bằng kim bạc. Kim ngả màu xám nhạt. Tán Linh Độc, loại độc làm kinh mạch tắc nghẽn từ từ. Thân thể này chưa từng là phế vật. Nó bị đầu độc suốt ba năm. Hà Nhân bỏ cơm ngoại môn, tự hái quả rừng mà sống. Một tháng sau, không cần hệ thống, anh tự mình đột phá Luyện Khí tầng ba.
@@ -239,12 +243,12 @@ Audio: ambient sound and soft guzheng music only, no dialogue.
 - **Thuyết minh:**
   > Kẻ đã đánh chết chủ cũ của thân thể này. Gia tộc của hắn quản lý nhà bếp ngoại môn, nơi bát cơm có độc. Mọi mảnh ghép bắt đầu khớp lại.
 
-**Cảnh 5.3 (13:10 – 14:10)**
+**Cảnh 5.3 (13:10 – 14:20)**
 - **Prompt hình:** Arena fight. Trieu Khon attacks with heavy fiery palm strikes; Ha Nhan dodges with minimal movement, always one step ahead, calm. Trieu Khon grows furious, and suddenly black-red demonic energy bursts from his palm. The crowd gasps, elders stand up in shock.
 - **Thuyết minh:**
   > Triệu Khôn Luyện Khí tầng sáu. Hà Nhân chỉ tầng ba. Nhưng anh không định thắng bằng sức. Anh đã xem hắn đánh mười bảy trận, ghi lại từng thói quen ra đòn. Anh né, lùi, và khẽ nói một câu chỉ hai người nghe được: "Sen đen nở ban ngày, không sợ bị nhìn thấy sao?" Triệu Khôn hoảng loạn. Trong cơn giận, hắn dùng ra thứ không được phép dùng: ma công.
 
-**Cảnh 5.4 (14:10 – 15:00)**
+**Cảnh 5.4 (14:20 – 15:00)**
 - **Prompt hình:** Trieu Khon is chained by glowing golden ropes and kneeling. Later, in a dark prison cell, he collapses as black lotus marks spread over his mouth, sealing it. Ha Nhan looks at the flickering blue panel.
 - **Thuyết minh:**
   > Triệu Khôn bị bắt ngay tại chỗ. Hắn khai mình là gian tế của Huyết Liên Giáo, được giao nhiệm vụ lấy trộm bản đồ cấm địa trong Tàng Kinh Các. Nhưng chưa kịp nói hết, ấn chú sen đen trên người hắn phát tác. Hắn chết trong ngục ngay đêm đó.
@@ -257,14 +261,14 @@ Audio: ambient sound and soft guzheng music only, no dialogue.
 
 ### CHƯƠNG 6 — CÂU HỎI THẬT SỰ (15:00 – 18:00)
 
-**Cảnh 6.1 (15:00 – 15:45)**
+**Cảnh 6.1 (15:00 – 15:40)**
 - **Prompt hình:** Night, Ha Nhan in his new inner-disciple room, all notebook pages spread on the floor, connected with red threads like a detective board, the blue panel glowing in the corner.
 - **Hà Nhân (nội tâm):**
   > Trận hút máu ở Hậu Sơn. Thuốc độc trong bát cơm. Gian tế lên Tàng Kinh Các. Nếu ta làm theo tất cả nhiệm vụ, kẻ được lợi nhất không phải ta. Mà là Huyết Liên Giáo.
 - **Thuyết minh:**
   > Hệ thống và ma giáo đang muốn cùng một kết quả. Đó không thể là trùng hợp.
 
-**Cảnh 6.2 (15:45 – 16:40)**
+**Cảnh 6.2 (15:40 – 16:40)**
 - **Prompt hình:** Third floor of an ancient library tower, towering shelves of bamboo scrolls, dust in golden light beams. Ha Nhan unrolls an old painted scroll showing a giant shadowy demon sealed beneath a canyon full of swords, surrounded by countless small glowing blue panels.
 - **Thuyết minh:**
   > Trên tầng ba Tàng Kinh Các, Hà Nhân tìm thấy một cuộn ghi chép đã ố vàng. Một nghìn năm trước, tổ sư Thanh Vân Tông phong ấn một ma đầu dưới Vạn Kiếm Uyên, ngay bên dưới tông môn. Tên nó là Hư Thiên Ma Chủ. Nó không có thân thể. Nó chỉ có một giọng nói, thì thầm vào tai con người, ban cho họ thứ họ muốn, và lấy đi từng mảnh linh hồn làm cái giá.
@@ -289,33 +293,33 @@ Audio: ambient sound and soft guzheng music only, no dialogue.
 
 ### CHƯƠNG 7 — NHIỆM VỤ CẤM (18:00 – 22:00)
 
-**Cảnh 7.1 (18:00 – 18:45)**
+**Cảnh 7.1 (18:00 – 18:40)**
 - **Prompt hình:** Dozens of holographic panels explode into view around Ha Nhan, now glowing blood red instead of blue, filling the whole room, he stands still in the middle.
 - **Hệ thống:**
   > Nhiệm vụ chính tuyến: trong bảy ngày, giết Tông chủ Vân Hạc Chân Nhân. Phần thưởng: Kim Đan đại đạo, thọ nguyên một nghìn năm.
 - **Thuyết minh:**
   > Không còn là nhiệm vụ nhỏ. Hệ thống đã bỏ lớp mặt nạ.
 
-**Cảnh 7.2 (18:45 – 19:40)**
+**Cảnh 7.2 (18:40 – 19:30)**
 - **Prompt hình:** Ha Nhan writes quickly in his notebook: a drawing of a red moon, a cave, and a seal. Cut to Sect Master Van Hac meditating in a closed cave, pale, sweat on his forehead, golden chains of light flowing from him down into the earth.
 - **Hà Nhân (nội tâm):**
   > Bảy ngày. Không phải vì nó cần ta giết. Mà vì bảy ngày nữa, sẽ có chuyện xảy ra với Tông chủ.
 - **Thuyết minh:**
   > Anh lật lại lịch pháp trong Tàng Kinh Các. Bảy ngày nữa là đêm Huyết Nguyệt, trăm năm mới có một lần, khi phong ấn yếu nhất. Tông chủ bế quan không phải để tu luyện, mà để dùng chính sinh mệnh mình gia cố phong ấn. Chỉ cần ai đó tấn công ông vào đêm ấy, phong ấn sẽ vỡ.
 
-**Cảnh 7.3 (19:40 – 20:30)**
+**Cảnh 7.3 (19:30 – 20:20)**
 - **Prompt hình:** Tiet Phong practicing sword alone in a moonlit courtyard, incredibly fast and powerful, but his eyes are hollow and dull. He greets his master and pauses, confused, unable to remember the master's name. Ha Nhan watches from behind a pillar.
 - **Thuyết minh:**
   > Nhiệm vụ này không chỉ gửi cho anh. Hà Nhân tìm kẻ có tu vi tăng nhanh bất thường trong một năm qua. Tiết Phong, đệ tử chân truyền, ba lần đột phá liên tiếp. Kiếm pháp của hắn ngày càng mạnh. Nhưng ánh mắt hắn ngày càng trống rỗng. Sáng nay, hắn gọi sai tên sư phụ của chính mình.
 - **Hà Nhân (nội tâm):**
   > Lại một Đỗ Thanh nữa.
 
-**Cảnh 7.4 (20:30 – 21:20)**
+**Cảnh 7.4 (20:20 – 21:10)**
 - **Prompt hình:** Detailed sect map drawn in Ha Nhan's notebook, arrows marking the west gate, the sect master's cave, and the sword abyss, side quests listed next to each location. Red panels float beside the notebook like pieces of a puzzle.
 - **Thuyết minh:**
   > Những ngày sau, nhiệm vụ phụ liên tục xuất hiện. "Mở cửa Tây sơn môn vào giờ Tý đêm thứ bảy." "Dập tắt đèn hộ trận ở Đông phong." "Dẫn Mộc trưởng lão rời khỏi vườn thuốc." Hà Nhân ghép tất cả lên bản đồ. Theo quy tắc số bốn, nhiệm vụ không thể nói dối. Vô tình, hệ thống đã đưa cho anh toàn bộ kế hoạch tấn công của Huyết Liên Giáo.
 
-**Cảnh 7.5 (21:20 – 22:00)**
+**Cảnh 7.5 (21:10 – 22:00)**
 - **Prompt hình:** Inside Elder Moc's study at night, Ha Nhan lays out his notebook and map on the table. Elder Moc reads it in silence, his expression shifting from doubt to grave seriousness. Lam Thanh Dao stands by the door, guarding.
 - **Mộc trưởng lão:**
   > Ngươi bảo lão phu tin vào lời của một ma đầu?
@@ -344,7 +348,7 @@ Audio: ambient sound and soft guzheng music only, no dialogue.
   >
   > Hai luồng kiếm khí va vào nhau, xé toạc màn đêm. Mộc trưởng lão không ra đòn sát thủ. Ông chỉ cầm chân. Bởi ông biết, người trước mặt không phải kẻ thù, mà là một đứa trẻ đã bị đánh cắp linh hồn.
 
-**Cảnh 8.3 (23:40 – 24:25)**
+**Cảnh 8.3 (23:40 – 24:30)**
 - **Prompt hình:** Ha Nhan stands at the edge of a deep canyon filled with thousands of ancient swords stuck in the rock walls, a dark violet glow pulsing from below. A single blood-red panel floats in front of him.
 - **Hệ thống:**
   > Nhiệm vụ cuối cùng: nhảy xuống Vạn Kiếm Uyên. Phần thưởng: tất cả.
@@ -355,14 +359,14 @@ Audio: ambient sound and soft guzheng music only, no dialogue.
 - **Hệ thống:**
   > Cảnh báo. Ký chủ hành động ngoài khế ước. Nhiệm vụ không được ghi nhận.
 
-**Cảnh 8.4 (24:25 – 25:15)**
+**Cảnh 8.4 (24:30 – 25:10)**
 - **Prompt hình:** Bottom of the abyss: a gigantic shadow demon with countless violet eyes looms over a cracked glowing crystal seal. Ha Nhan, small in comparison, walks toward the crystal. The demon's voice echoes, blue panels swirl around him like a storm.
 - **Ma Chủ (cùng giọng với hệ thống, trầm hơn):**
   > Nhận đi. Chỉ một lần thôi. Ngươi sẽ thành tiên. Ngươi sẽ không bao giờ phải tăng ca, không bao giờ bị ai coi thường nữa.
 - **Thuyết minh:**
   > Nó biết. Nó biết cả thế giới cũ của anh. Nó luôn biết con người muốn gì.
 
-**Cảnh 8.5 (25:15 – 26:00)**
+**Cảnh 8.5 (25:10 – 26:00)**
 - **Prompt hình:** Ha Nhan places his hand on the cracked seal crystal. A faint ghostly figure of an ancient founder in white robes appears behind him, placing a hand on his shoulder. Thousands of swords rise from the canyon walls and pierce the shadow demon, blinding white-gold light fills the abyss.
 - **Thuyết minh:**
   > Hà Nhân đặt tay lên viên tinh thạch phong ấn. Một bóng người áo trắng hiện ra sau lưng anh, tàn hồn của tổ sư đã chờ suốt một nghìn năm. Vạn thanh kiếm cổ cùng rung lên, rời khỏi vách đá, lao về phía bóng đen. Ánh sáng nuốt chửng cả vực sâu.
@@ -373,19 +377,19 @@ Audio: ambient sound and soft guzheng music only, no dialogue.
 
 ### CHƯƠNG 9 — LẦN NHẬN DUY NHẤT (26:00 – 29:00)
 
-**Cảnh 9.1 (26:00 – 26:45)**
+**Cảnh 9.1 (26:00 – 26:40)**
 - **Prompt hình:** An infinite white void. Ha Nhan stands alone. In front of him, a single cracked and flickering blue panel, its light weak and unstable.
 - **Hệ thống:**
   > Vì sao? Ta cho ngươi mọi thứ. Sức mạnh, thọ nguyên, sự tôn trọng. Vì sao ngươi chưa từng nhận một lần?
 - **Thuyết minh:**
   > Không còn tiếng chuông. Không còn ánh vàng của phần thưởng. Giọng nói từng ra lệnh suốt mấy tháng qua, giờ chỉ còn như một tiếng thở dài.
 
-**Cảnh 9.2 (26:45 – 27:35)**
+**Cảnh 9.2 (26:40 – 27:20)**
 - **Prompt hình:** Close-up of Ha Nhan's calm face, soft light, he holds his worn notebook against his chest.
 - **Hà Nhân:**
   > Vì ngươi chưa bao giờ nói giá. Ở thế giới cũ của ta, thứ gì được cho không, thì chính ta là món hàng. Ngươi luôn cho ta đáp án. Nhưng thứ ta cần, chỉ là câu hỏi.
 
-**Cảnh 9.3 (27:35 – 28:15)**
+**Cảnh 9.3 (27:20 – 28:10)**
 - **Prompt hình:** The final panel appears, plain and simple, no golden border, no reward icon. Ha Nhan reaches out and touches it for the first time. The panel shatters into thousands of tiny glowing particles like fireflies.
 - **Hệ thống:**
   > Nhiệm vụ: hủy bỏ liên kết. Phần thưởng: không có.
@@ -394,7 +398,7 @@ Audio: ambient sound and soft guzheng music only, no dialogue.
 - **Thuyết minh:**
   > Nhiệm vụ duy nhất Hà Nhân chấp nhận, là nhiệm vụ không có phần thưởng.
 
-**Cảnh 9.4 (28:15 – 29:00)**
+**Cảnh 9.4 (28:10 – 29:00)**
 - **Prompt hình:** Morning after the battle, the sect is safe, sunlight over the peaks. Tiet Phong sits wrapped in a blanket, tears in his eyes as his memories return. Sect Master Van Hac, pale but smiling, places his hand on Ha Nhan's shoulder. Lam Thanh Dao hands Ha Nhan a cup of tea.
 - **Thuyết minh:**
   > Bình minh lên. Phong ấn được vá lại. Tiết Phong dần nhớ lại tên sư phụ, tên mẹ mình. Tông chủ nhận Hà Nhân làm đệ tử thân truyền. Còn anh, việc đầu tiên sau khi tỉnh lại, là mở cuốn sổ và viết thêm một dòng: "Quy tắc số sáu: thứ đáng giá nhất, không có trong danh sách phần thưởng."
@@ -403,14 +407,14 @@ Audio: ambient sound and soft guzheng music only, no dialogue.
 
 ### CHƯƠNG 10 — KẾT VÀ MỞ MÀN (29:00 – 30:00)
 
-**Cảnh 10.1 (29:00 – 29:35)**
+**Cảnh 10.1 (29:00 – 29:30)**
 - **Prompt hình:** Months later, Ha Nhan sits on a cliff edge at sunrise, wind moving his robe, peaceful sea of clouds below, he writes in his notebook.
 - **Thuyết minh:**
   > Nhiều tháng trôi qua. Thanh Vân Tông yên bình trở lại. Không còn tiếng "đinh". Không còn nhiệm vụ. Lần đầu tiên kể từ khi xuyên không, Hà Nhân được sống một ngày bình thường.
   >
   > Mỗi sáng, anh vẫn giữ thói quen lên vách núi, nhìn biển mây và ghi chép những điều nhỏ nhặt. Hôm nay vườn thuốc nở hoa gì. Sư muội pha trà đậm hay nhạt. Tiết Phong đã nhớ lại thêm được bao nhiêu chuyện cũ.
 
-**Cảnh 10.2 (29:35 – 30:00)**
+**Cảnh 10.2 (29:30 – 30:00)**
 - **Prompt hình:** Suddenly a new holographic panel appears beside him, glowing purple with silver patterns, different from the old one. Ha Nhan pauses, sighs, then calmly flips to a fresh blank page in his notebook. Fade to black.
 - **Hệ thống mới (giọng nữ, lạnh):**
   > Đinh! Phát hiện linh hồn từng liên kết. Vạn Giới Nhiệm Vụ Hệ Thống xin chào ký chủ.
